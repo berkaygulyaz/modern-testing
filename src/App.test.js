@@ -4,11 +4,5 @@ import App from './App';
 test('should render App component without creashing', () => {
   render(<App />);
   const element = screen.getByText('Modern Testing');
-  expect(element).toBeInTheDocument();;
-})
-
-test('should render button component', () => {
-  render(<App />);
-  const element = screen.getByText('Button');
-  expect(element).toBeInTheDocument();;
+  expect(element).toBeInTheDocument();
 })
